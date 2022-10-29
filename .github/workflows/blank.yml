@@ -26,7 +26,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: kirtinagpal077/app1:latest
+        tags: kirtinagpal077/app1
     # - uses: addnab/docker-run-action@v3
     #   with:
     #     image: japanjot15/app1

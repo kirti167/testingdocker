@@ -23,7 +23,7 @@ jobs:
     - name: Build and push
       
       # uses: docker/build-push-action@v3
-      run : docker build .
+      run : docker build -f Dockerfile .
       # with:
       #   # push: true
       #   tags: kirtinagpal077/app1

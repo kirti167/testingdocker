@@ -21,12 +21,10 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
     - name: Build and push
-      
-      # uses: docker/build-push-action@v3
-      run : docker build -f Dockerfile .
-      # with:
-      #   # push: true
-      #   tags: kirtinagpal077/app1
+      uses: docker/build-push-action@v3
+      with:
+        push: true
+        tags: kirtinagpal077/app1
    
-    # - name: docker run 
-    #   run: docker run -d -p8001:8000 kirtinagpal077/app1
+    - name: docker run 
+      run: docker run -d -p8001:8000 kirtinagpal077/app1
